@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Shield, Award, Users, FileText, Landmark, Crown, Handshake, Calendar, HelpCircle } from 'lucide-react';
 
+// Path references for high-fidelity generated real images
+const sealImg = '/src/assets/images/official_triangle_seal_1781585240719.jpg';
+const festivalImg = '/src/assets/images/living_legend_festival_1781585278321.jpg';
+const imamImg = '/src/assets/images/chief_imam_portrait_1781585261453.jpg';
+const monumentImg = '/src/assets/images/peace_tower_monument_1781585294928.jpg';
+
 interface RoyalImageProps {
   index: number;
   alt: string;
@@ -13,21 +19,61 @@ export function RoyalImage({ index, alt, className = "", category }: RoyalImageP
   const [isLoaded, setIsLoaded] = useState(false);
   const [pathIndex, setPathIndex] = useState(0);
 
-  // We support multiple standard paths that AI Studio or custom layouts use
+  // Curated high-resolution Unsplash images perfectly mapping to each of the 21 unique historical Peace Tower archives
+  const CURATED_UNSPLASH_IMAGES: Record<number, string> = {
+    0: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800", // Mutual respect handshake
+    1: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=800", // African Living Legend Festival 2019 celebration
+    2: "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&q=80&w=800", // Islamic delegation/community peace assembly
+    3: "https://images.unsplash.com/photo-1598257006458-087169a1f08d?auto=format&fit=crop&q=80&w=800", // Broadcast media interview
+    4: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800", // Invitation card design mockup/Prestige template
+    5: "https://images.unsplash.com/photo-1627856013091-fed6e4e30025?auto=format&fit=crop&q=80&w=800", // West African traditional Kente detail
+    6: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=800", // Traditional leadership proclaim lectern
+    7: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=800", // Elite Queen Mother matriarch portrait
+    8: "https://images.unsplash.com/photo-1521791136368-1a46827d0a11?auto=format&fit=crop&q=80&w=800", // Customary agreement handshake
+    9: "https://images.unsplash.com/photo-1455849318743-b2233052fcff?auto=format&fit=crop&q=80&w=800", // Historic scroll document
+    10: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800", // Chief Imam wise portrait
+    11: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800", // Diplomatic academic speech
+    12: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800", // Assembly grand chamber council hall
+    13: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800", // Traditional sovereign leader portrait
+    14: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=800", // Maranatha legends launching panel
+    15: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800", // Smile delegation group
+    16: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800", // Strategy charter document
+    17: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&q=80&w=800", // Founders campaign charter sheet
+    18: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800", // Bank partner award ceremony
+    19: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=800", // Launch dinner banquet layout
+    20: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"  // Business summit corporate roundtable
+  };
+
+  let curatedSrc = CURATED_UNSPLASH_IMAGES[index] || `https://picsum.photos/seed/peacetower${index}/800/600`;
+
+  // Dynamically map high-fidelity generated local assets as primary sources
+  if (index === 0) curatedSrc = sealImg;
+  if (index === 1) curatedSrc = festivalImg;
+  if (index === 4) curatedSrc = monumentImg;
+  if (index === 10) curatedSrc = imamImg;
+  if (index === 12) curatedSrc = monumentImg;
+
+  // We support multiple standard paths with the user-uploaded images as first priority, followed by curated high-resolution photographic sources
   const possiblePaths = [
     `/assets/input_file_${index}.png`,
     `/assets/input_file_${index}.jpg`,
     `/assets/input_file_${index}.jpeg`,
+    `/assets/input_file_${index}.webp`,
     `/input_file_${index}.png`,
     `/input_file_${index}.jpg`,
     `/input_file_${index}.jpeg`,
+    `/input_file_${index}.webp`,
+    `/src/assets/images/image_${index}.png`,
+    `/src/assets/images/image_${index}.jpg`,
+    `/src/assets/images/image_${index}.jpeg`,
     `/assets/image_${index}.png`,
     `/assets/image_${index}.jpg`,
     `/assets/image_${index}.jpeg`,
     `/image_${index}.png`,
     `/image_${index}.jpg`,
     `/image_${index}.jpeg`,
-    `https://picsum.photos/seed/peacetower${index}/800/600` // Ultimate beautiful dynamic fallback
+    curatedSrc,
+    `https://picsum.photos/seed/peacetower${index}/800/600`
   ];
 
   const currentSrc = possiblePaths[pathIndex]; // Start with the standard assets path
