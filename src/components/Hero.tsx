@@ -16,7 +16,7 @@ export default function Hero({ onExplore }: HeroProps) {
   return (
     <section 
       id="hero" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-royal-950 pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent pt-20"
     >
       {/* Dynamic Ambient Background Glows */}
       <div className="ambient-glow top-[-10%] left-[-10%] scale-150" />

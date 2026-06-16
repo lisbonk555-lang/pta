@@ -42,7 +42,7 @@ export default function Gallery() {
   return (
     <section 
       id="gallery" 
-      className="relative py-20 px-4 sm:px-6 lg:px-8 bg-royal-950 border-t border-gold-500/10 overflow-hidden"
+      className="relative py-20 px-4 sm:px-6 lg:px-8 bg-transparent border-t border-gold-500/10 overflow-hidden"
     >
       <div className="ambient-glow top-[10%] left-[-10%] scale-[1.3] rotate-12" />
       <div className="ambient-glow bottom-[-5%] right-[-10%] scale-[1.2]" />

@@ -30,8 +30,12 @@
 /* Custom CSS scrollbars & ambient backgrounds */
 body {
   font-family: var(--font-sans);
-  background-color: #040914; /* Deepest royal dark background */
-  color: #f1f6fc;
+  background: radial-gradient(circle at 20% 20%, #440a15 0%, transparent 40%),
+              radial-gradient(circle at 80% 80%, #05331e 0%, transparent 40%),
+              radial-gradient(circle at 50% 50%, #3e2702 0%, transparent 50%),
+              linear-gradient(135deg, #070f20 0%, #150409 50%, #03140b 100%);
+  background-attachment: fixed;
+  color: #f8fafc;
 }
 
 /* Scrollbar Styling */
@@ -87,10 +91,22 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(212, 163, 23, 0.08) 0%, rgba(14, 32, 63, 0) 70%);
+  background: radial-gradient(circle, rgba(212, 163, 23, 0.12) 0%, rgba(14, 32, 63, 0) 70%);
   filter: blur(60px);
   pointer-events: none;
   z-index: 0;
+}
+
+.glow-red {
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.glow-gold {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.glow-green {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
 }
 
 /* Endless horizontal marquee animation */

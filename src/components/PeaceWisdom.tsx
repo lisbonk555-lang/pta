@@ -110,7 +110,7 @@ export default function PeaceWisdom() {
   return (
     <section 
       id="peace-wisdom" 
-      className="relative py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-royal-950 to-royal-900 border-t border-gold-500/10 overflow-hidden"
+      className="relative py-16 px-4 sm:px-6 lg:px-8 bg-transparent border-t border-gold-500/10 overflow-hidden"
     >
       <div className="ambient-glow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-110 opacity-60" />
       

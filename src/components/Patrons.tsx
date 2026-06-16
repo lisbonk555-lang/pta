@@ -21,7 +21,7 @@ export default function Patrons() {
   return (
     <section 
       id="patrons" 
-      className="relative py-20 px-4 sm:px-6 lg:px-8 bg-royal-950 border-t border-gold-500/10 overflow-hidden"
+      className="relative py-20 px-4 sm:px-6 lg:px-8 bg-transparent border-t border-gold-500/10 overflow-hidden"
     >
       <div className="ambient-glow top-[30%] left-[-10%] scale-[1.1]" />
       <div className="ambient-glow bottom-[20%] right-[-15%] scale-[1.2] rotate-12" />

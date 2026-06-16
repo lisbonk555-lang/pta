@@ -11,17 +11,26 @@ interface RoyalImageProps {
 export function RoyalImage({ index, alt, className = "", category }: RoyalImageProps) {
   const [hasError, setHasError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [pathIndex, setPathIndex] = useState(0);
 
   // We support multiple standard paths that AI Studio or custom layouts use
   const possiblePaths = [
-    `/assets/image_${index}.png`,
-    `/image_${index}.png`,
     `/assets/input_file_${index}.png`,
+    `/assets/input_file_${index}.jpg`,
+    `/assets/input_file_${index}.jpeg`,
     `/input_file_${index}.png`,
+    `/input_file_${index}.jpg`,
+    `/input_file_${index}.jpeg`,
+    `/assets/image_${index}.png`,
+    `/assets/image_${index}.jpg`,
+    `/assets/image_${index}.jpeg`,
+    `/image_${index}.png`,
+    `/image_${index}.jpg`,
+    `/image_${index}.jpeg`,
     `https://picsum.photos/seed/peacetower${index}/800/600` // Ultimate beautiful dynamic fallback
   ];
 
-  const currentSrc = possiblePaths[0]; // Start with the standard assets path
+  const currentSrc = possiblePaths[pathIndex]; // Start with the standard assets path
 
   const getIconForIndex = (idx: number) => {
     if (idx === 0) return <Handshake className="w-12 h-12 text-gold-400 animate-pulse" />;
@@ -102,10 +111,8 @@ export function RoyalImage({ index, alt, className = "", category }: RoyalImageP
         onLoad={() => setIsLoaded(true)}
         onError={() => {
           // Fall back gracefully to the other configured asset paths
-          const idx = possiblePaths.indexOf(currentSrc);
-          if (idx < possiblePaths.length - 1) {
-            // Wait, we can rewrite the img src dynamically inside an onError, or skip to error visualizer
-            setHasError(true);
+          if (pathIndex < possiblePaths.length - 1) {
+            setPathIndex(prev => prev + 1);
           } else {
             setHasError(true);
           }

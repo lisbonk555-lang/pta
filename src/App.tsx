@@ -58,7 +58,14 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-royal-950 text-royal-50 relative selection:bg-gold-500/30 selection:text-gold-100">
+    <div className="min-h-screen text-royal-50 relative selection:bg-gold-500/30 selection:text-gold-100 overflow-x-hidden">
+      
+      {/* VIBRANT ROYAL AMBIENT COLOR GLOWS */}
+      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full bg-rose-600/15 blur-[130px] pointer-events-none mix-blend-screen" />
+      <div className="absolute top-[20%] right-[-100px] w-[600px] h-[600px] rounded-full bg-emerald-600/15 blur-[150px] pointer-events-none mix-blend-screen" />
+      <div className="absolute top-[45%] left-[-150px] w-[550px] h-[550px] rounded-full bg-amber-500/25 blur-[140px] pointer-events-none mix-blend-screen" />
+      <div className="absolute top-[70%] right-[10%] w-[650px] h-[650px] rounded-full bg-rose-600/15 blur-[160px] pointer-events-none mix-blend-screen" />
+      <div className="absolute bottom-[5%] left-[20%] w-[500px] h-[500px] rounded-full bg-emerald-500/15 blur-[140px] pointer-events-none mix-blend-screen" />
       
       {/* Top Royal Announcement Ticker Bar */}
       {showTicker && (

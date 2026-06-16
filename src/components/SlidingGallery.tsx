@@ -29,34 +29,44 @@ export default function SlidingGallery() {
   return (
     <section 
       id="sliding-marquee" 
-      className="relative py-12 bg-royal-900 border-t border-b border-gold-500/10 overflow-hidden"
+      className="relative py-12 bg-transparent border-t border-b border-gold-500/20 overflow-hidden"
     >
+      {/* VIBRANT ROYAL GLOWS - Red, Gold, Green authentic West African colors for extreme attraction */}
+      <div className="absolute top-1/4 left-10 w-96 h-96 rounded-full bg-rose-600/10 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-10 w-96 h-96 rounded-full bg-emerald-600/10 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/3 w-[500px] h-[500px] rounded-full bg-amber-500/10 blur-[140px] pointer-events-none" />
+
+      {/* Subtle Grid overlay */}
+      <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:14px_24px] pointer-events-none" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 z-10 relative">
         <div className="text-left space-y-1">
-          <span className="font-mono text-[10px] sm:text-xs font-bold text-gold-500 uppercase tracking-widest flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-amber-500 animate-ping inline-block" />
-            Live Historical Photostream
+          <span className="font-mono text-[10px] sm:text-xs font-bold text-gold-400 uppercase tracking-widest flex items-center gap-1.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping inline-block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-amber-400 to-emerald-400 font-extrabold">
+              ROYAL HISTORICAL PHOTOSTREAM
+            </span>
           </span>
-          <h2 className="font-serif text-xl sm:text-2xl font-extrabold text-gold-100 tracking-tight uppercase">
-            Sovereign Archive Carousel
+          <h2 className="font-serif text-2xl sm:text-3xl font-black text-gold-100 tracking-tight uppercase">
+            Sovereign Heritage Carousel
           </h2>
-          <p className="font-sans text-xs text-royal-100/60 leading-tight">
-            Seamless sliding track of all twenty-one real attached launch photographs. Hover to pause, click to inspect.
+          <p className="font-sans text-xs sm:text-sm text-royal-100/70 max-w-2xl leading-tight">
+            An interactive sliding track documenting all twenty-one real historic launch photographs of the Peace Tower initiative. <span className="text-gold-400 font-semibold">Hover to pause, click to inspect full details.</span>
           </p>
         </div>
         <div className="flex items-center gap-2 text-sans text-xs text-gold-400 font-mono self-start sm:self-center">
-          <span className="px-2 py-0.5 rounded bg-royal-950/80 border border-gold-500/10">
-            {GALLERY_IMAGES.length} Archives Active
+          <span className="px-3 py-1 rounded bg-gradient-to-r from-royal-950 to-royal-900 border-2 border-gold-500/30 font-extrabold shadow-lg">
+            {GALLERY_IMAGES.length} Archives Registered
           </span>
         </div>
       </div>
 
       {/* Marquee Outer Container */}
-      <div className="relative w-full overflow-hidden py-4 select-none">
+      <div className="relative w-full overflow-hidden py-6 select-none z-10">
         
         {/* Soft edge blur overlays to make it fade nicely into borders */}
-        <div className="absolute left-0 inset-y-0 w-16 sm:w-28 bg-gradient-to-r from-royal-900 to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 inset-y-0 w-16 sm:w-28 bg-gradient-to-l from-royal-900 to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 inset-y-0 w-24 sm:w-36 bg-gradient-to-r from-royal-950 via-royal-950/80 to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 inset-y-0 w-24 sm:w-36 bg-gradient-to-l from-royal-950 via-royal-950/80 to-transparent z-10 pointer-events-none" />
 
         {/* Marquee Track */}
         <div className="animate-marquee flex gap-6 hover:[animation-play-state:paused] cursor-grab active:cursor-grabbing">
@@ -64,39 +74,48 @@ export default function SlidingGallery() {
             <div
               key={`${img.index}-${i}`}
               onClick={() => setActiveImageIndex(img.index)}
-              className="group relative w-72 h-[220px] rounded-lg overflow-hidden royal-glass border border-gold-500/15 flex flex-col justify-end bg-royal-950 shrink-0 select-none shadow-md hover:border-gold-400/40 hover:shadow-gold-500/5 transition-all duration-300"
+              className="group relative w-80 h-[240px] rounded-xl overflow-hidden royal-glass border border-gold-500/20 flex flex-col justify-end bg-royal-950 shrink-0 select-none shadow-xl hover:border-gold-300 hover:shadow-gold-500/20 hover:-translate-y-1 transition-all duration-300"
             >
               <div className="absolute inset-0 w-full h-full">
                 <RoyalImage 
                   index={img.index} 
                   alt={img.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" 
                   category={img.tagline}
                 />
               </div>
 
-              {/* Dynamic Overlay Gradient for readable caption text */}
-              <div className="absolute inset-0 bg-gradient-to-t from-royal-950 via-royal-950/40 to-transparent z-[2]" />
+              {/* Colorful vibrant overlay gradient for rich contrast (Dark bottom moving to colourful upper) */}
+              <div className="absolute inset-0 bg-gradient-to-t from-royal-950 via-royal-950/30 to-transparent z-[2]" />
+
+              {/* Glowing decorative border effect inner */}
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-gold-500/30 rounded-xl transition-all pointer-events-none z-[4]" />
+
+              {/* West African Flag Ribbon on bottom edge of each image (Vibrant colourful touch) */}
+              <div className="absolute bottom-0 inset-x-0 h-1.5 bg-gradient-to-r from-rose-600 via-amber-500 to-emerald-600 z-[4]" />
 
               {/* Text Tag and Titles */}
-              <div className="p-4 z-[3] text-left">
-                <span className="font-mono text-[9px] font-bold text-gold-500 uppercase tracking-widest block mb-0.5">
+              <div className="p-5 z-[3] text-left">
+                <span className="font-mono text-[9px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-amber-200 uppercase tracking-widest block mb-1">
                   {img.tagline}
                 </span>
-                <h3 className="font-serif text-[13px] font-extrabold text-gold-100 truncate group-hover:text-gold-300 transition-colors">
+                <h3 className="font-serif text-sm font-extrabold text-gold-100 truncate group-hover:text-gold-300 transition-colors">
                   {img.title}
                 </h3>
-                <span className="font-mono text-[8px] text-royal-100/40 text-left block mt-1">
-                  ID: #PTA-{String(img.index).padStart(2, '0')}
-                </span>
+                <div className="flex items-center justify-between mt-1">
+                  <span className="font-mono text-[8.5px] text-royal-100/50 uppercase tracking-widest">
+                    ID: #PTA-{String(img.index).padStart(2, '0')}
+                  </span>
+                  <span className="font-mono text-[8px] px-2 py-0.5 rounded bg-amber-500/20 text-gold-300 font-bold uppercase leading-none border border-gold-500/20">
+                    HISTORIC
+                  </span>
+                </div>
               </div>
 
               {/* Hover magnifying glass sign */}
-              <div className="absolute top-3 right-3 z-[3] p-1.5 rounded-full bg-royal-900/90 border border-gold-500/20 text-gold-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="flex items-center gap-1 font-mono text-[8px] font-bold uppercase tracking-widest leading-none px-1">
-                  <Eye className="w-3 h-3 text-gold-400" />
-                  Inspect
-                </p>
+              <div className="absolute top-3 right-3 z-[3] p-1.5 rounded-lg bg-royal-950/90 border border-gold-500/40 text-gold-400 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1.5 shadow-md">
+                <Eye className="w-3.5 h-3.5 text-gold-400 animate-pulse" />
+                <span className="font-mono text-[8px] font-black uppercase tracking-widest leading-none">INSPECT</span>
               </div>
             </div>
           ))}

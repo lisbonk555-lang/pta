@@ -20,7 +20,7 @@ export default function Objectives() {
   return (
     <section 
       id="objectives" 
-      className="relative py-20 px-4 sm:px-6 lg:px-8 bg-royal-950 border-t border-gold-500/10 overflow-hidden"
+      className="relative py-20 px-4 sm:px-6 lg:px-8 bg-transparent border-t border-gold-500/10 overflow-hidden"
     >
       {/* Background ambient lighting */}
       <div className="ambient-glow top-[20%] right-[-10%] scale-100" />

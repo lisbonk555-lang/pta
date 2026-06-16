@@ -1,4 +1,5 @@
 import { Gavel, Heart, ChevronUp, Scale, Star } from 'lucide-react';
+import PTALogo from './PTALogo';
 
 interface FooterProps {
   onScrollToTop: () => void;
@@ -6,7 +7,7 @@ interface FooterProps {
 
 export default function Footer({ onScrollToTop }: FooterProps) {
   return (
-    <footer className="relative bg-royal-950 border-t border-gold-500/15 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <footer className="relative bg-royal-950/85 border-t border-gold-500/15 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background ambient light */}
       <div className="absolute top-[80%] left-[45%] w-80 h-80 bg-gold-500/5 rounded-full filter blur-5xl pointer-events-none" />
 
@@ -16,8 +17,8 @@ export default function Footer({ onScrollToTop }: FooterProps) {
           {/* Column 1: PTA Branding */}
           <div className="col-span-1 md:col-span-5 text-left space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-royal-900 border border-gold-500/40 flex items-center justify-center font-serif font-black text-xs text-gold-400">
-                PTA
+              <div id="pta-footer-logo-container" className="w-[50px] h-[50px] bg-royal-900/60 p-0.5 rounded flex items-center justify-center overflow-hidden">
+                <PTALogo size={44} className="shrink-0" />
               </div>
               <div className="flex flex-col">
                 <span className="font-serif text-sm font-extrabold text-gold-100 uppercase tracking-widest leading-none">

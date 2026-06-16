@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Shield, Handshake, Compass, Award, Image, UserCheck, MessageSquare } from 'lucide-react';
 import { RoyalImage } from './RoyalImage';
+import PTALogo from './PTALogo';
 
 interface NavbarProps {
   activeSection: string;
@@ -57,13 +58,9 @@ export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
               className="flex items-center gap-3 cursor-pointer group"
               onClick={() => handleLinkClick('hero')}
             >
-              <div className="relative w-12 h-12 flex items-center justify-center rounded-full bg-royal-900 border border-gold-500/30 overflow-hidden shadow-md shadow-gold-500/5">
-                {/* Try to resolve image_0.png, using our high resilience wrapper */}
-                <div className="absolute inset-0">
-                  <RoyalImage index={0} alt="PTA Logo" className="w-full h-full object-cover" category="Logo" />
-                </div>
-                {/* Behind it is a stylized safety emblem */}
-                <span className="sr-only">PTA</span>
+              <div id="pta-brand-logo-container" className="relative w-14 h-14 flex items-center justify-center bg-royal-950/40 p-1 select-none overflow-hidden transition-all duration-300 group-hover:scale-105">
+                <PTALogo size={52} className="shrink-0" />
+                <span className="sr-only">PTA Logo</span>
               </div>
               <div className="flex flex-col">
                 <span className="font-serif font-extrabold tracking-wider text-sm sm:text-base text-gold-100 group-hover:text-gold-400 transition-colors uppercase leading-none">
