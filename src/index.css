@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-royal-950: #040914;
+  --color-royal-900: #071226;
+  --color-royal-800: #0e203f;
+  --color-royal-700: #193566;
+  --color-royal-600: #264e91;
+  --color-royal-500: #376ab5;
+  --color-royal-100: #e2ecf8;
+  --color-royal-50: #f1f6fc;
+
+  --color-gold-50: #fffdf5;
+  --color-gold-100: #fef9e1;
+  --color-gold-200: #fdf0b7;
+  --color-gold-300: #fae17f;
+  --color-gold-400: #f7ce4a;
+  --color-gold-500: #d4a317; /* Noble gold */
+  --color-gold-600: #b8860b; /* Dark Goldenrod */
+  --color-gold-700: #916503;
+  --color-gold-800: #714e00;
+  --color-gold-900: #543a01;
+}
+
+/* Custom CSS scrollbars & ambient backgrounds */
+body {
+  font-family: var(--font-sans);
+  background-color: #040914; /* Deepest royal dark background */
+  color: #f1f6fc;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #040914;
+}
+::-webkit-scrollbar-thumb {
+  background: #193566;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4a317;
+}
+
+/* Metallic gold shining text styling helper */
+.text-shine {
+  background: linear-gradient(135deg, #fef9e1 0%, #fae17f 25%, #d4a317 50%, #fae17f 75%, #fef9e1 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 0% center; }
+  100% { background-position: -200% center; }
+}
+
+/* Elegant visual glass-morphism classes for cards */
+.royal-glass {
+  background: rgba(14, 32, 63, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 163, 23, 0.15);
+}
+
+.royal-glass-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.royal-glass-hover:hover {
+  background: rgba(14, 32, 63, 0.6);
+  border-color: rgba(212, 163, 23, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(212, 163, 23, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Custom subtle animation for background glow */
+.ambient-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 163, 23, 0.08) 0%, rgba(14, 32, 63, 0) 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Endless horizontal marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
