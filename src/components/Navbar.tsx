@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Shield, Handshake, Compass, Award, Image, UserCheck, MessageSquare } from 'lucide-react';
+import { Menu, X, Shield, Handshake, Compass, Award, Image, UserCheck, MessageSquare, History } from 'lucide-react';
 import { RoyalImage } from './RoyalImage';
 import PTALogo from './PTALogo';
 
@@ -29,6 +29,7 @@ export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
     { id: 'hero', name: 'Home', icon: Compass },
     { id: 'objectives', name: 'Objectives', icon: Shield },
     { id: 'programs', name: 'Programmes', icon: Award },
+    { id: 'ghana-thank-you-awards', name: 'GTYA Awards', icon: History },
     { id: 'tribunal-portal', name: 'Mediation Chamber', icon: Handshake },
     { id: 'gallery', name: 'Archive Gallery', icon: Image },
     { id: 'patrons', name: 'Patrons', icon: UserCheck },

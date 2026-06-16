@@ -21,6 +21,7 @@ import Footer from './components/Footer';
 import SlidingGallery from './components/SlidingGallery';
 import PeaceWisdom from './components/PeaceWisdom';
 import BackToTop from './components/BackToTop';
+import GhanaThankYouAwards from './components/GhanaThankYouAwards';
 import { Sparkles, MessageSquareCode, Volume2, X } from 'lucide-react';
 
 export default function App() {
@@ -30,7 +31,7 @@ export default function App() {
   // Simple scroll listener to spy scroll active positions
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'objectives', 'programs', 'tribunal-portal', 'gallery', 'patrons', 'contact'];
+      const sections = ['hero', 'objectives', 'programs', 'ghana-thank-you-awards', 'tribunal-portal', 'gallery', 'patrons', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sect of sections) {
@@ -101,6 +102,9 @@ export default function App() {
 
         {/* Historic Programs */}
         <Programs />
+
+        {/* Ghana Thank You Awards Section */}
+        <GhanaThankYouAwards />
 
         {/* Interactive Dispute Conciliator & Trade Advisory Portal */}
         <TribunalPortal />
