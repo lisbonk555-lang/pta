@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Shield, Award, Users, FileText, Landmark, Crown, Handshake, Calendar, HelpCircle } from 'lucide-react';
 
 // Path references for high-fidelity generated real images
-const sealImg = '/src/assets/images/official_triangle_seal_1781585240719.jpg';
+const sealImg = 'https://i.postimg.cc/h48tSXD8/IMG-20260616-WA0010.jpg';
 const festivalImg = '/src/assets/images/living_legend_festival_1781585278321.jpg';
 const imamImg = '/src/assets/images/chief_imam_portrait_1781585261453.jpg';
 const monumentImg = '/src/assets/images/peace_tower_monument_1781585294928.jpg';
@@ -76,7 +76,10 @@ export function RoyalImage({ index, alt, className = "", category }: RoyalImageP
     `https://picsum.photos/seed/peacetower${index}/800/600`
   ];
 
-  const currentSrc = possiblePaths[pathIndex]; // Start with the standard assets path
+  // If we have a hardcoded image link or curated path, use it directly to prevent broken/long-loading attempts
+  const isHardcodedIndex = [0, 1, 4, 10, 12].includes(index);
+  const currentSrc = isHardcodedIndex ? curatedSrc : possiblePaths[pathIndex]; 
+
 
   const getIconForIndex = (idx: number) => {
     if (idx === 0) return <Handshake className="w-12 h-12 text-gold-400 animate-pulse" />;

@@ -69,203 +69,232 @@ const GTYA_NOMINEES = [
     role: "Vice Presidential Candidate, Academic Elder",
     category: "state" as const,
     bio: "Pioneering academic and former Minister for Education, recognized for supreme service to national literacy and female educational empowerment.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-soLV4P8fvJoPmRsBbml2P4REy6WExipv4B1TsqpEfSa65Nw_nAALv0Yfg0F_pb7-dTtJbi9OAnJIiRH3jucYe_6qphWjRcVSOJOohiGBA&s=10"
   },
   {
     name: "H.E. LORDINA MAHAMA",
     role: "Former First Lady of the Republic of Ghana",
     category: "state" as const,
     bio: "Distinguished humanitarian championing health, orphan support, and women empowerment initiatives via the Lordina Foundation.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsIMIwlYGpJVhkjbqhcQimIpsVe9nWVxcIWi5Obu1lSQ&s=10"
   },
   {
     name: "H.E. KHADIJA IDDRISU",
     role: "Chief Director, Ministry of Foreign Affairs",
     category: "state" as const,
     bio: "Eminent diplomat maintaining sovereign boundary integrity and bridging international bilateral relationships.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400&h=400"
   },
   {
     name: "HRH LADY JULIA OSEI TUTU",
     role: "Patron, Otumfuo Osei Tutu Charity Foundation",
     category: "royal" as const,
     bio: "Sovereign noble mother leading immense educational expansion and clean water accessibility across rural communities.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEfQs1mR7IQIF84e4Fl6xWT-xTvNHUIxBBT2pGgOMe_g&s=10"
   },
   {
     name: "JSC SOPHIA A. B. AKUFFO",
     role: "Former Chief Justice of the Republic of Ghana",
     category: "state" as const,
     bio: "Renowned legal pillar dedicated to unyielding constitutional rule and integrity in West African jurisprudence.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZS90eAWYUZjj_kyfWT5yXYIg1b4jeXx4T66FYSJJwdQ&s=10"
   },
   {
     name: "PATRICIA POKU-DIABY",
     role: "Eminent Businesswoman, CEO Plot Enterprise Gh",
     category: "commerce" as const,
     bio: "Pioneering agricultural exporter transforming domestic cocoa bean processing into a multi-million dollar global supply operation.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfP9pqst3x5M1E-BwhE68Mt27w0ttqFwSOrjZaNe3p3g&s=10"
   },
   {
     name: "TOGBE AFEDE XIV",
     role: "Paramount Chief of Asogli State, Industrial Icon",
     category: "royal" as const,
     bio: "Sovereign traditional monarch and major investment strategist bridging commerce, heavy logistics, and regional youth employment.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUwR77GbCRjUkcpTWL9oaesoP_OP7nZNefZ9SwRkijgg&s=10"
   },
   {
     name: "H.E. JOHN AGYEKUM KUFOUR",
     role: "Former President of the Republic of Ghana",
     category: "state" as const,
     bio: "Eminent elder statesman celebrated for monumental continental mediation, national economic stability, and diplomatic wisdom.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPnMigysmLMCvP-30DeZ-_9E5j2G_Zjmlau69TgnjhYg&s"
   },
   {
     name: "SIR SAM JONAH",
     role: "Eminent Industrialist, President of Jonah Capital",
     category: "commerce" as const,
     bio: "Global mining pioneer and foremost developmental advocate guiding financial frameworks across Sub-Saharan Africa.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-QjZmr-FwQJm4SrTtiJVX776duWDk7byCWtL7yPbLkg&s=10"
   },
   {
     name: "DR. KWABENA DUFFUOR",
     role: "CEO UniBank & Chairman of HODA Group",
     category: "commerce" as const,
     bio: "Foremost economist and financial executive who spearheaded sovereign banking reformations and public sector transparency campaigns.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzomyqOBmOVQMnLyDERnDb3DQWKUDLh49YLOKs6cHAvA&s=10"
   },
   {
     name: "HON. JOHNSON ASIEDU NKETIA",
     role: "National Chairman, National Democratic Congress",
     category: "state" as const,
     bio: "Vanguard political strategist reinforcing democratic party policies and sovereign grassroots mobilization models.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEWdtXSfUo97cGbIPWIbN4mWB4AKKFyqrQhOuXAjw0Eg&s=10"
   },
   {
     name: "HON. KENNEDY AGYAPONG",
     role: "Eminent Entrepreneur & Prolific Politician",
     category: "commerce" as const,
     bio: "Bold commercial advocate establishing major manufacturing plants to combat urban youth brain-drain and import reliance.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwLwcTror3RPp4vSxN4DEJ82wEAPy1FCCEtsZBXPSbhQ&s=10"
   },
   {
     name: "DR. DANIEL MCKORLEY",
     role: "McDan Group CEO, Logistical Visionary",
     category: "commerce" as const,
     bio: "Aviation and heavy logistics mogul sponsoring massive infrastructure, security initiatives, and youth sports development across Ghana.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFlI48rxHeOJGWakb9cOoGVnPzfqSjEfOjQVFSAG673A&s=10"
   },
   {
     name: "BESSA SIMONS",
     role: "President of MUSIGA, Osibisa Legend",
     category: "community" as const,
     bio: "Legendary highlife composer leveraging musical traditions to promote West African peace campaigns and support vintage artists.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaDftjPwdBy1Yi1V3fUlBMOV_QvSSUrhASaZmXq_t-7w&s=10"
   },
   {
     name: "OKOGYEAMAN APAGYA OFORI APAPAMU IV",
     role: "Traditional Sovereign & Traditional Chief",
     category: "royal" as const,
     bio: "Eminent royal ruler actively championing customary conflict containment and protecting sacred river systems.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsZaS3LWspbSTwBc3bGKWHVDAgRlDknLAxaQMprLun7Q&s=10"
   },
   {
     name: "NII AFOTEY BOTWE II",
     role: "Chief of Nungua, Founder New Life Orphanage",
     category: "royal" as const,
     bio: "Compassionate custodian committing vast traditional lands to shelter, school, and empower hundreds of disenfranchised children.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5NANNdCrxW_Xfmwzkme7nT54rMcVjtG6oULDJN9EQ_w&s=10"
   },
   {
     name: "ABUBAKARI DAWUD",
     role: "President, Ghana National Supporters Union",
     category: "community" as const,
     bio: "Dynamic community organizer channeling soccer enthusiasm into cross-tribal national unity and peaceful civic parade campaigns.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=400&h=400"
   },
   {
     name: "PROF. S. ATO DUNCAN",
     role: "CEO & Founder of COA Mixture (Research Scientist)",
     category: "commerce" as const,
     bio: "Renowned medical research visionary developing legendary organic healthcare remedies to enhance African self-reliance.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHgAdwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xAA5EAACAQMCAwUGBQIGAwAAAAABAgMABBEFEiExQQYiUWFxBxMUgZGxIzJCocGC0VJicpKy4RU0Q//EABgBAAMBAQAAAAAAAAAAAAAAAAABAgME/8QAGxEBAQEBAAMBAAAAAAAAAAAAAAECESExQQP/2gAMAwEAAhEDEQA/AMgBSpA07FVScAp6iuAU9aQcxjiTwrL6nqEl9KUjJFuDhVH6vM1fazIY9MnxzYBfqcfzVJZWRcBzyFRrXF4z0LHZluoFHW+mb2xvFFoiqduzIHgaP08AyKEjJyeprC7romIDPZ9nTg/plTTrJ57KRYLkloSdqsf0n+1bdJ4YbdIvhkLMuWLOP2zVTeQQXOYnj2iThVy2J1iWBGWuAZrlvuMKrIcuuVJ8SDj+KkxWzmR4pEU9sDlTcigG0q7SoAfb1pwbpXcZFcVcmmDh50+uAcKeo4UBX62u7T3APEFWPkMjjVfaM3ud4DtGpwxRC2OBJ4DyBPyNHajDCss0l0jNG4QKUOGU5IOPkKEiiHwdzFHHuHMDJySOXLyyPmaw1Zbx0YzZOmNqUSuDArkN+p1Az9TVjb3V3ayB9oj2jjvw4YHyXOPnimkwG3DRwRkyOshyCMY5YYHNM1SQmZ7mAKJJB3wq4BEST_INDEX_MAPPED_HERE"
   },
   {
     name: "IBRAHIM A. MAHAMA",
     role: "Founder, Engineers & Planners / Business Mogul",
     category: "commerce" as const,
     bio: "Consummate industrial pioneer leading supreme logistical and engineering operations that generate thousands of secure local jobs.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb0Cq2G364k7mN2FhMkUp71sdcgdva2wjyWcuzeWVH1A&s=10"
   },
   {
     name: "DR. JOHNSON ASIAMAH",
     role: "Former Governor, Bank of Ghana",
     category: "commerce" as const,
     bio: "Senior macroeconomic counselor recognized for orchestrating monetary guidelines to safehouse domestic investment.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_wS9PE2Uk04eoKzLzzWoI8LAJfMSCw-BwFGyagYRUOA&s=10"
   },
   {
     name: "HON. SAMUEL OKUDZETO ABLAKWA",
     role: "MP for North Tongu, Foreign Affairs Diplomat",
     category: "state" as const,
     bio: "Eminent public servant celebrated for direct grassroots crisis relief and diplomatic advocacy for regional West African integration.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpIXHma6K-NocmoE8BEHi3W5PzGpllKEeU4KT6AWphXw&s=10"
   },
   {
     name: "KEVIN OKYERE",
     role: "CEO Springfield Group, Energy Mogul",
     category: "commerce" as const,
     bio: "Foremost energy entrepreneur pioneering sovereign exploration processes to secure African resources for African development.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqGk9rZJbTXq3YiUOzntkjqoHpmzThJSCGdI1-TPuV6g&s=10"
   },
   {
     name: "DR. JOSEPH SIAW AGYEPONG",
     role: "CEO Zoomlion & Chairman JGC Group",
     category: "commerce" as const,
     bio: "Pioneering industrial sanitarian creating highly modular recycling and public cleanliness programs all over West Africa.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8jA47mMyQbTCkFoyUlwbZLwIPZBxk4V1XsRHrEF5WFw&s=10"
   },
   {
     name: "IGP C. TETTEH YOHUNO",
     role: "Ghana Police Service Operations Director",
     category: "community" as const,
     bio: "Uncompromising law enforcement commander deploying highly targeted community policing grids to neutralize urban violence.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYoOvWZ2OGAfqE0Et-xgQe3c3FLetcw6RjbUnreQJUA&s=10"
   },
   {
     name: "HON. MUBARAK MOHAMMED MUNTAKA",
     role: "Interior Ministry Liaison & MP",
     category: "state" as const,
     bio: "Elite parliamentarian focusing on municipal safety systems and conflict reconciliation across complex urban communities.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQ_X7EDfOmV-BV2--8YZ5Nly4vdyTDn0v48OqwMgJ4Q&s=10"
   },
   {
     name: "ACI PHILIP P. ANDOH",
     role: "Assistant Commissioner of Immigration, GIS",
     category: "community" as const,
     bio: "Technical security specialist safeguarding border boundaries and organizing streamlined international entry protocols.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpN2nywPmIu52TTzhOgHQJhmW1mTWwjREL53JeZJPNfw&s=10"
   },
   {
     name: "DR. JOSEPH K. OBENG",
     role: "CEO New Lucky Electricals & President GUTA",
     category: "commerce" as const,
     bio: "Vigorous commercial general advocating for fair trade codes and supporting thousands of local market traders and retailers.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMjNLd6Uk8QkfjCzMtmb2ULttIZleWqS91hhTIcweUqA&s=10"
   },
   {
     name: "H.E. NANA KWAME BEDIAKO",
     role: "Presidential Candidate 2024, New Force Founder",
     category: "state" as const,
     bio: "Dynamic real estate developer and youth industrialist advocating for massive economic job clusters and pan-African unity.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3UFxLSI4MmD5qvSJM7-hZgU1scxxwrdxvnx4f2koIRg&s=10"
   },
   {
     name: "HRM DR. EMMANUEL NII ANKRAH",
     role: "Ga Traditional Family Head, GPRTU Vice Chair",
     category: "royal" as const,
     bio: "Paramount traditional authority guiding municipal transportation policies, vocational security, and commercial driving equity.",
-    badge: "Appreciation Awards"
+    badge: "Appreciation Awards",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL0Bj7x-sAv-RmD19CSCc-lZO89daDBnhbp6M-CZLyqQ&s=10"
   }
 ];
 
@@ -680,7 +709,7 @@ Sovereign Coordinators:
                   {filteredNominees.map((nominee, idx) => (
                     <div 
                       key={nominee.name}
-                      className="group relative select-none overflow-hidden rounded-xl border-2 border-gold-500/20 bg-[#090b11] shadow-2xl transition-all duration-300 hover:border-gold-400 hover:-translate-y-1 flex flex-col h-[320px] justify-between"
+                      className="group relative select-none overflow-hidden rounded-xl border-2 border-gold-500/20 bg-[#090b11] shadow-2xl transition-all duration-300 hover:border-gold-400 hover:-translate-y-1 flex flex-col min-h-[380px] justify-between"
                     >
                       {/* Flag top-bottom ribbons exactly mimicking the poster grid in Pages 7, 11, 12, 13, 14 */}
                       <div className="h-4 bg-gradient-to-r from-rose-600 via-amber-400 to-emerald-600 w-full flex items-center justify-center">
@@ -693,28 +722,39 @@ Sovereign Coordinators:
                         <div className="absolute right-3 top-3 w-16 h-16 bg-gold-500/[0.03] rounded-full border border-gold-500/5 animate-spin-slow pointer-events-none" />
                         
                         <div>
-                          <div className="flex items-center justify-between mb-2">
-                            <span className="font-mono text-[9px] font-bold text-amber-500 uppercase tracking-widest border border-gold-500/20 px-2 py-0.5 rounded">
-                              NOMINEE
-                            </span>
-                            <span className="font-mono text-[8.5px] text-royal-100/50 uppercase font-bold tracking-widest">
-                              9th Edition 2026
-                            </span>
+                          <div className="flex items-center gap-4 mb-2">
+                            <div className="w-16 h-16 rounded-full overflow-hidden border border-gold-400/40 shadow-xl shrink-0 bg-royal-950/80">
+                              <img 
+                                src={nominee.image} 
+                                alt={nominee.name} 
+                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                                referrerPolicy="no-referrer"
+                              />
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <div className="flex items-center justify-between mb-1">
+                                <span className="font-mono text-[8px] font-bold text-amber-500 uppercase tracking-widest border border-gold-500/20 px-1.5 py-0.5 rounded">
+                                  NOMINEE
+                                </span>
+                                <span className="font-mono text-[8px] text-royal-100/50 uppercase font-bold tracking-widest">
+                                  9th Ed
+                                </span>
+                              </div>
+                              <h3 className="font-serif text-sm sm:text-base font-black text-gold-100 tracking-tight leading-none uppercase group-hover:text-gold-300 transition-colors truncate">
+                                {nominee.name}
+                              </h3>
+                              <p className="font-mono text-[9px] text-emerald-400 font-bold tracking-wide mt-1 italic truncate">
+                                {nominee.role}
+                              </p>
+                            </div>
                           </div>
-
-                          <h3 className="font-serif text-base sm:text-lg font-black text-gold-100 tracking-tight leading-tight uppercase group-hover:text-gold-300 transition-colors">
-                            {nominee.name}
-                          </h3>
-                          <p className="font-mono text-[10px] text-emerald-400 font-bold tracking-wide mt-1 italic">
-                            {nominee.role}
-                          </p>
                         </div>
 
-                        <p className="font-sans text-xs text-royal-100/70 leading-relaxed font-light line-clamp-4">
+                        <p className="font-sans text-xs text-royal-100/70 leading-relaxed font-light line-clamp-4 flex-1">
                           {nominee.bio}
                         </p>
 
-                        <div className="flex items-center gap-1 font-mono text-[9px] text-royal-100/40 mt-1">
+                        <div className="flex items-center gap-1 font-mono text-[9px] text-royal-100/40 border-t border-gold-500/10 pt-2 shrink-0">
                           <span>Category:</span>
                           <span className="text-gold-400 font-bold uppercase">{nominee.badge}</span>
                         </div>
@@ -732,149 +772,6 @@ Sovereign Coordinators:
                     <p className="font-sans text-sm text-royal-100/50">No nominees matched your search parameters. Try adjusting filters.</p>
                   </div>
                 )}
-
-                {/* INTERACTIVE NOMINEE POSTER GENERATOR */}
-                <div className="border border-gold-500/25 rounded-2xl bg-[#0b0e15] p-6 sm:p-8 mt-12 shadow-2xl">
-                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                    
-                    {/* Controls (7 Columns) */}
-                    <div className="lg:col-span-7 space-y-6 text-left">
-                      <div>
-                        <span className="font-mono text-[9px] text-amber-500 font-bold uppercase tracking-widest block mb-1">
-                          Interactive Campaign Hub
-                        </span>
-                        <h3 className="font-serif text-xl sm:text-2xl font-black text-gold-100 uppercase">
-                          Create Your Own GTYA Poster Frame!
-                        </h3>
-                        <p className="font-sans text-xs sm:text-sm text-royal-100/70 leading-relaxed mt-1 font-light">
-                          Support the cause! Type any name (your own, or a business/community leader you admire), select a sovereign title, upload a graphic face portrait, and print or generate your customizable nomination card in traditional Ghanaian colors!
-                        </p>
-                      </div>
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div className="space-y-1.5">
-                          <label className="font-mono text-[10px] text-royal-100/60 uppercase font-bold">Nominee Name</label>
-                          <input 
-                            type="text" 
-                            value={generatorName}
-                            onChange={(e) => setGeneratorName(e.target.value.toUpperCase())}
-                            className="w-full px-3 py-2 bg-royal-900 border border-gold-500/25 rounded text-xs text-royal-100 font-sans focus:outline-none focus:border-gold-500"
-                          />
-                        </div>
-
-                        <div className="space-y-1.5">
-                          <label className="font-mono text-[10px] text-royal-100/60 uppercase font-bold">Sovereign Title</label>
-                          <input 
-                            type="text" 
-                            value={generatorTitle}
-                            onChange={(e) => setGeneratorTitle(e.target.value.toUpperCase())}
-                            className="w-full px-3 py-2 bg-royal-900 border border-gold-500/25 rounded text-xs text-royal-100 font-sans focus:outline-none focus:border-gold-500"
-                          />
-                        </div>
-
-                        <div className="space-y-1.5">
-                          <label className="font-mono text-[10px] text-royal-100/60 uppercase font-bold">Category Badge</label>
-                          <select 
-                            value={generatorCategory}
-                            onChange={(e) => setGeneratorCategory(e.target.value)}
-                            className="w-full px-3 py-2 bg-royal-900 border border-gold-500/25 rounded text-xs text-royal-100 font-sans focus:outline-none focus:border-gold-500"
-                          >
-                            <option value="Appreciation Awards">Appreciation Awards</option>
-                            <option value="Good Service & Appreciation">Good Service & Appreciation</option>
-                            <option value="Sovereign Peace Icon">Sovereign Peace Icon</option>
-                            <option value="Ladies in Driving Elite">Ladies in Driving Elite</option>
-                          </select>
-                        </div>
-
-                        <div className="space-y-1.5">
-                          <label className="font-mono text-[10px] text-royal-100/60 uppercase font-bold">Upload Portrait Face</label>
-                          <button 
-                            onClick={() => fileInputRef.current?.click()}
-                            className="w-full px-3 py-2 bg-royal-900 border border-gold-500/25 rounded text-xs text-gold-400 font-bold cursor-pointer hover:bg-royal-900/60 transition-colors block text-left truncate flex items-center gap-1.5"
-                          >
-                            <ImageIcon className="w-4 h-4" />
-                            {generatorImage ? "Change Image" : "Choose File..."}
-                          </button>
-                          <input 
-                            type="file" 
-                            ref={fileInputRef}
-                            onChange={handleImageChange}
-                            accept="image/*"
-                            className="hidden"
-                          />
-                        </div>
-                      </div>
-
-                      <div className="flex flex-wrap gap-4 pt-4 border-t border-gold-500/10">
-                        <button 
-                          onClick={() => window.print()}
-                          className="px-5 py-2.5 rounded bg-gradient-to-r from-amber-600 to-gold-500 text-royal-950 font-serif font-extrabold text-xs uppercase tracking-widest cursor-pointer hover:from-gold-500 hover:to-gold-300 transition-all flex items-center gap-2 shadow-lg"
-                        >
-                          <Printer className="w-3.5 h-3.5" /> Print Campaign Card
-                        </button>
-                        {generatorImage && (
-                          <button 
-                            onClick={() => {
-                              setGeneratorImage(null);
-                              setGeneratorName('YOUR FULL NAME');
-                              setGeneratorTitle('PEACE CHAMPION & ENTREPRENEUR');
-                            }}
-                            className="px-4 py-2 text-xs font-mono font-bold text-rose-400 border border-rose-500/20 rounded hover:bg-rose-950/20 transition-all cursor-pointer"
-                          >
-                            Reset Customizer
-                          </button>
-                        )}
-                      </div>
-                    </div>
-
-                    {/* Poster Preview (5 Columns) */}
-                    <div className="lg:col-span-5 flex justify-center">
-                      <div 
-                        ref={posterRef}
-                        className="w-full max-w-[290px] h-[340px] rounded-xl border-4 border-gold-500 bg-[#090b11] shadow-2xl flex flex-col justify-between overflow-hidden relative"
-                      >
-                        {/* Top Ribbon */}
-                        <div className="h-5 bg-gradient-to-r from-rose-600 via-amber-400 to-emerald-600 w-full flex items-center justify-center relative z-10">
-                          <span className="font-sans text-[8.5px] text-royal-950 font-black tracking-widest leading-none">★ ★ ★ GHANA ★ ★ ★</span>
-                        </div>
-
-                        {/* Middle portrait space */}
-                        <div className="flex-1 flex flex-col items-center justify-center p-4 text-center relative z-10 mix-blend-normal">
-                          {/* Inner glowing circle */}
-                          <div className="absolute inset-0 bg-gradient-to-t from-[#090b11] via-transparent to-transparent pointer-events-none" />
-                          
-                          {generatorImage ? (
-                            <div className="w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-rose-500 via-amber-500 to-emerald-500 overflow-hidden mb-3 shadow-lg">
-                              <img src={generatorImage} alt="User Nominee" className="w-full h-full object-cover rounded-full" />
-                            </div>
-                          ) : (
-                            <div className="w-24 h-24 rounded-full bg-royal-950 border-2 border-gold-500/30 flex items-center justify-center mb-3 text-gold-400 text-4xl font-serif font-black shadow-lg">
-                              ★
-                            </div>
-                          )}
-
-                          <span className="font-mono text-[8px] text-amber-500 border border-gold-500/20 px-2 py-0.5 rounded uppercase tracking-widest block mb-1 font-bold">
-                            {generatorCategory.toUpperCase()}
-                          </span>
-
-                          <h4 className="font-serif text-sm font-black text-gold-100 tracking-tight leading-tight uppercase max-w-[220px]">
-                            {generatorName}
-                          </h4>
-                          <p className="font-sans text-[10px] text-emerald-400 font-extrabold italic truncate max-w-[200px] mt-1 uppercase tracking-wide">
-                            {generatorTitle}
-                          </p>
-                          <span className="font-mono text-[8.5px] text-royal-100/40 uppercase tracking-widest mt-2 block font-extrabold">9TH EDITION 2026</span>
-                        </div>
-
-                        {/* Bottom Ribbon */}
-                        <div className="h-5 bg-gradient-to-r from-rose-600 via-amber-400 to-emerald-600 w-full flex items-center justify-center relative z-10">
-                          <span className="font-sans text-[8.5px] text-royal-950 font-black tracking-widest leading-none">★ ★ ★ NOMINEE ★ ★ ★</span>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
 
               </div>
             )}
