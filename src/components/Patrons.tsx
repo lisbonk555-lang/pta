@@ -61,12 +61,21 @@ export default function Patrons() {
               
               {/* Profile Portrait Container */}
               <div className="w-36 h-36 sm:w-44 sm:h-auto overflow-hidden rounded-md border border-gold-500/25 p-1 bg-royal-950 relative shrink-0 aspect-square sm:aspect-auto">
-                <RoyalImage 
-                  index={patron.imageIndex} 
-                  alt={patron.name} 
-                  className="w-full h-full object-cover rounded" 
-                  category="Portrait"
-                />
+                {patron.imageUrl ? (
+                  <img 
+                    src={patron.imageUrl} 
+                    alt={patron.name} 
+                    className="w-full h-full object-cover rounded" 
+                    referrerPolicy="no-referrer"
+                  />
+                ) : (
+                  <RoyalImage 
+                    index={patron.imageIndex} 
+                    alt={patron.name} 
+                    className="w-full h-full object-cover rounded" 
+                    category="Portrait"
+                  />
+                )}
                 
                 {/* Decorative Star tag on image */}
                 <div className="absolute top-2 left-2 p-1 rounded bg-royal-950/90 border border-gold-500/30">

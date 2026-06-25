@@ -31,4 +31,5 @@ export interface Patron {
   title: string;
   achievements: string[];
   imageIndex: number;
+  imageUrl?: string;
 }

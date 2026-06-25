@@ -86,7 +86,7 @@ const GTYA_NOMINEES = [
     category: "state" as const,
     bio: "Eminent diplomat maintaining sovereign boundary integrity and bridging international bilateral relationships.",
     badge: "Appreciation Awards",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400&h=400"
+    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=400&h=400"
   },
   {
     name: "HRH LADY JULIA OSEI TUTU",
@@ -198,7 +198,7 @@ const GTYA_NOMINEES = [
     category: "community" as const,
     bio: "Dynamic community organizer channeling soccer enthusiasm into cross-tribal national unity and peaceful civic parade campaigns.",
     badge: "Appreciation Awards",
-    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=400&h=400"
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400"
   },
   {
     name: "PROF. S. ATO DUNCAN",

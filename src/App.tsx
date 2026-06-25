@@ -11,11 +11,7 @@
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Objectives from './components/Objectives';
-import Programs from './components/Programs';
-import TribunalPortal from './components/TribunalPortal';
-import PeaceResolutionChat from './components/PeaceResolutionChat';
-import Gallery from './components/Gallery';
+import AfricanLivingLegends from './components/AfricanLivingLegends';
 import Patrons from './components/Patrons';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -32,7 +28,7 @@ export default function App() {
   // Simple scroll listener to spy scroll active positions
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'objectives', 'programs', 'ghana-thank-you-awards', 'tribunal-portal', 'peace-chat-platform', 'gallery', 'patrons', 'contact'];
+      const sections = ['hero', 'african-living-legends', 'ghana-thank-you-awards', 'patrons', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sect of sections) {
@@ -98,26 +94,14 @@ export default function App() {
       {/* Main Narrative Sections */}
       <main id="main-content">
         
-        {/* Core Strategic Pillars */}
-        <Objectives />
-
-        {/* Historic Programs */}
-        <Programs />
+        {/* African Living Legends Section */}
+        <AfricanLivingLegends />
 
         {/* Ghana Thank You Awards Section */}
         <GhanaThankYouAwards />
 
-        {/* Interactive Dispute Conciliator & Trade Advisory Portal */}
-        <TribunalPortal />
-
-        {/* 24/7 African Peace & Conflict Resolution Assistant (Council of Elders AI) */}
-        <PeaceResolutionChat />
-
         {/* Rotating peace & unity quotes from African Leaders (Peace Wisdom card) */}
         <PeaceWisdom />
-
-        {/* Extensive Archive Gallery with Image Lights */}
-        <Gallery />
 
         {/* Noble Patrons */}
         <Patrons />

@@ -27,12 +27,8 @@ export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
 
   const menuItems = [
     { id: 'hero', name: 'Home', icon: Compass },
-    { id: 'objectives', name: 'Objectives', icon: Shield },
-    { id: 'programs', name: 'Programmes', icon: Award },
+    { id: 'african-living-legends', name: 'Living Legends', icon: Award },
     { id: 'ghana-thank-you-awards', name: 'GTYA Awards', icon: History },
-    { id: 'tribunal-portal', name: 'Mediation Chamber', icon: Handshake },
-    { id: 'peace-chat-platform', name: 'Peace AI Chat', icon: Sparkles },
-    { id: 'gallery', name: 'Archive Gallery', icon: Image },
     { id: 'patrons', name: 'Patrons', icon: UserCheck },
     { id: 'contact', name: 'Contact US', icon: MessageSquare },
   ];

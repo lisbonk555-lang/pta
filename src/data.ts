@@ -3,43 +3,43 @@ import { Objective, GalleryImage, Program, Patron } from './types';
 export const CORE_OBJECTIVES: Objective[] = [
   {
     id: 1,
-    title: "Honor the Freedom Fighters",
-    description: "Build a physical Peace Tower monument in Ghana in sacred memory of Africa's brave freedom fighters."
+    title: "Honor Freedom Fighters",
+    description: "Build a Peace Tower in Ghana in memory of the freedom fighters."
   },
   {
     id: 2,
-    title: "Ensure National Peace Stability",
-    description: "Sustain and build a peaceful sovereign atmosphere before, during, and after elections to prevent national tension."
+    title: "Sovereign Atmosphere for Investors",
+    description: "To build a Peaceful atmosphere for investors in Ghana."
   },
   {
     id: 3,
-    title: "Youth Conflict Prevention",
-    description: "Actively mentor and encourage African youth to desist from conflicts, factional violence, and war to maintain absolute peace."
+    title: "Youth Desistance from Factions",
+    description: "Encourage youth to desist from conflicts and wars to maintain Peace."
   },
   {
     id: 4,
-    title: "Academic Platform for Peace",
-    description: "Create a world-class educational resource academy and physical platform where students and diplomats can study peace mechanisms."
+    title: "Academic Platform for Peace Studies",
+    description: "Create platform where people will visit to study about peace."
   },
   {
     id: 5,
-    title: "Youth Leadership Development",
-    description: "Nurture well-informed, responsible youth cohorts on essential factors of education, social well-being, leadership, and hard work."
+    title: "Africa Investment Center",
+    description: "Offer Africa Investment Center office."
   },
   {
     id: 6,
-    title: "Conflict Resolution Hub",
-    description: "Offer sovereign nations, regions, and traditional tribal authorities the platform to arbitrate and settle their disputes inside the Peace Tower."
+    title: "Settle Conflicts",
+    description: "Offer nations and regions the opportunity to settle their conflicts in the Peace Tower."
   },
   {
     id: 7,
-    title: "Attract Continental Investments",
-    description: "Enhance and influence the African continent to embrace stable peace as a dynamic vehicle to attract massive global trade and investors."
+    title: "Embrace Continental Peace",
+    description: "Enhancing and influencing our continent to embrace Peace to attract investors."
   },
   {
     id: 8,
-    title: "Prevent Youth Brain Drain",
-    description: "Create abundant industrial & economic trade jobs for local youth, preventing forced migration and seeking search for dangerous greener pastures outside Africa."
+    title: "Create Youth Employment",
+    description: "Creating jobs for the youths so they would stop migrating to seek greener pasture outside Africa."
   }
 ];
 
@@ -99,7 +99,8 @@ export const NOBLE_PATRONS: Patron[] = [
       "Fostered deep interfaith harmony between Christian and Muslim communities",
       "Spearheaded international peaceful advocacy panels"
     ],
-    imageIndex: 10
+    imageIndex: 10,
+    imageUrl: "https://cdn.modernghana.com/images/content/423201925559_l5hsk8v331_8ee03896c2414314b0bdc0e66f022e4f.jpeg"
   },
   {
     id: "kwesi_atta",
@@ -111,7 +112,8 @@ export const NOBLE_PATRONS: Patron[] = [
       "Presented the Peace Tower blueprints to national state leadership",
       "Host of state-level launching ceremonies at the Banquet Hall in Accra"
     ],
-    imageIndex: 13
+    imageIndex: 13,
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToysYm_q4KaWAyaoCZgkYJeSXTL9MbzYu-Jw&s"
   },
   {
     id: "safo",
@@ -123,7 +125,8 @@ export const NOBLE_PATRONS: Patron[] = [
       "Pioneer in youth technical guidance and continental enterprise",
       "Advocate of combining traditional values with modern industrialization"
     ],
-    imageIndex: 1
+    imageIndex: 1,
+    imageUrl: "https://i0.wp.com/www.gbcghanaonline.com/wp-content/uploads/2025/09/thumbnail_1000608374.jpg"
   },
   {
     id: "mensah",
