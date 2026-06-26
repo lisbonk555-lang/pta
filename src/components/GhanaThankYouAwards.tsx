@@ -709,7 +709,7 @@ Sovereign Coordinators:
                   {filteredNominees.map((nominee, idx) => (
                     <div 
                       key={nominee.name}
-                      className="group relative select-none overflow-hidden rounded-xl border-2 border-gold-500/20 bg-[#090b11] shadow-2xl transition-all duration-300 hover:border-gold-400 hover:-translate-y-1 flex flex-col min-h-[380px] justify-between"
+                      className="group relative select-none overflow-hidden rounded-xl border-2 border-gold-500/20 bg-[#090b11] shadow-2xl transition-all duration-300 hover:border-gold-400 hover:-translate-y-1 flex flex-col justify-between"
                     >
                       {/* Flag top-bottom ribbons exactly mimicking the poster grid in Pages 7, 11, 12, 13, 14 */}
                       <div className="h-4 bg-gradient-to-r from-rose-600 via-amber-400 to-emerald-600 w-full flex items-center justify-center">
@@ -717,44 +717,61 @@ Sovereign Coordinators:
                       </div>
 
                       {/* Poster Core Content Block */}
-                      <div className="p-5 flex-1 flex flex-col text-left justify-between space-y-4 relative">
+                      <div className="p-5 flex-1 flex flex-col text-center justify-between space-y-4 relative">
                         {/* Golden backdrop circular seal watermark */}
                         <div className="absolute right-3 top-3 w-16 h-16 bg-gold-500/[0.03] rounded-full border border-gold-500/5 animate-spin-slow pointer-events-none" />
                         
                         <div>
-                          <div className="flex items-center gap-4 mb-2">
-                            <div className="w-16 h-16 rounded-full overflow-hidden border border-gold-400/40 shadow-xl shrink-0 bg-royal-950/80">
-                              <img 
-                                src={nominee.image} 
-                                alt={nominee.name} 
-                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
-                                referrerPolicy="no-referrer"
-                              />
+                          {/* Square nominee image increased in size (about 5 times area of the 16x16 avatar) */}
+                          <div className="w-full aspect-square overflow-hidden rounded-lg border border-gold-500/25 p-1 bg-royal-950 shadow-lg relative">
+                            <img 
+                              src={nominee.image} 
+                              alt={nominee.name} 
+                              className="w-full h-full object-cover rounded transition-transform duration-500 group-hover:scale-105" 
+                              referrerPolicy="no-referrer"
+                            />
+                            {/* Overlay frame subtle gold accent */}
+                            <div className="absolute inset-0 border border-gold-500/10 rounded pointer-events-none" />
+                          </div>
+
+                          {/* Name and role appearing nicely under their picture */}
+                          <div className="mt-4 space-y-1.5">
+                            <div className="flex items-center justify-center gap-2">
+                              <span className="font-mono text-[8px] font-bold text-amber-500 uppercase tracking-widest border border-gold-500/20 px-1.5 py-0.5 rounded">
+                                NOMINEE
+                              </span>
+                              <span className="font-mono text-[8px] text-royal-100/50 uppercase font-bold tracking-widest">
+                                9th Ed
+                              </span>
                             </div>
-                            <div className="flex-1 min-w-0">
-                              <div className="flex items-center justify-between mb-1">
-                                <span className="font-mono text-[8px] font-bold text-amber-500 uppercase tracking-widest border border-gold-500/20 px-1.5 py-0.5 rounded">
-                                  NOMINEE
-                                </span>
-                                <span className="font-mono text-[8px] text-royal-100/50 uppercase font-bold tracking-widest">
-                                  9th Ed
-                                </span>
-                              </div>
-                              <h3 className="font-serif text-sm sm:text-base font-black text-gold-100 tracking-tight leading-none uppercase group-hover:text-gold-300 transition-colors truncate">
-                                {nominee.name}
-                              </h3>
-                              <p className="font-mono text-[9px] text-emerald-400 font-bold tracking-wide mt-1 italic truncate">
-                                {nominee.role}
-                              </p>
-                            </div>
+                            <h3 className="font-serif text-base sm:text-lg font-black text-gold-100 tracking-tight leading-tight uppercase group-hover:text-gold-300 transition-colors">
+                              {nominee.name}
+                            </h3>
+                            <p className="font-mono text-[10px] text-emerald-400 font-bold tracking-wide italic">
+                              {nominee.role}
+                            </p>
                           </div>
                         </div>
 
-                        <p className="font-sans text-xs text-royal-100/70 leading-relaxed font-light line-clamp-4 flex-1">
+                        {/* Bio/Description */}
+                        <p className="font-sans text-xs text-royal-100/75 leading-relaxed font-light text-center px-2 flex-1">
                           {nominee.bio}
                         </p>
 
-                        <div className="flex items-center gap-1 font-mono text-[9px] text-royal-100/40 border-t border-gold-500/10 pt-2 shrink-0">
+                        {/* Elegant custom pure-CSS Ghana Flag under description */}
+                        <div className="flex flex-col items-center gap-1 py-1 shrink-0">
+                          <div className="w-14 h-9 rounded overflow-hidden border border-gold-500/30 flex flex-col relative shadow-md">
+                            <div className="h-1/3 bg-rose-600" />
+                            <div className="h-1/3 bg-amber-400 flex items-center justify-center relative">
+                              <span className="text-black text-[12px] leading-none absolute select-none">★</span>
+                            </div>
+                            <div className="h-1/3 bg-emerald-600" />
+                          </div>
+                          <span className="font-mono text-[7px] tracking-widest text-gold-500/50 uppercase">Republic of Ghana</span>
+                        </div>
+
+                        {/* Category bottom line */}
+                        <div className="flex items-center justify-center gap-1 font-mono text-[9px] text-royal-100/40 border-t border-gold-500/10 pt-2 shrink-0">
                           <span>Category:</span>
                           <span className="text-gold-400 font-bold uppercase">{nominee.badge}</span>
                         </div>

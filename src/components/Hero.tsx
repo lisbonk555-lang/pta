@@ -192,14 +192,14 @@ export default function Hero({ onExplore }: HeroProps) {
           <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-gold-500/40 rounded-bl" />
           <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-gold-500/40 rounded-br" />
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center items-start">
             
             {/* Left Image */}
             <div 
-              className="md:col-span-3 flex flex-col items-center cursor-pointer group"
+              className="flex flex-col items-center cursor-pointer group"
               onClick={() => onExplore('african-living-legends')}
             >
-              <div className="relative w-40 h-52 sm:w-44 sm:h-56 rounded-md overflow-hidden border border-gold-500/35 p-1 bg-royal-950 shadow-lg shadow-gold-500/5 group-hover:border-gold-500/60 transition-all scale-100 group-hover:scale-105 active:scale-[0.98]">
+              <div className="relative w-44 h-56 rounded-md overflow-hidden border border-gold-500/35 p-1 bg-royal-950 shadow-lg shadow-gold-500/5 group-hover:border-gold-500/60 transition-all scale-100 group-hover:scale-105 active:scale-[0.98]">
                 <img 
                   src="https://i.ibb.co/hFt12nmB/Whats-App-Image-2026-06-23-at-22-42-24.jpg" 
                   alt="Peace Campaign Document" 
@@ -216,34 +216,31 @@ export default function Hero({ onExplore }: HeroProps) {
               </span>
             </div>
 
-            {/* Middle Note Content */}
-            <div className="md:col-span-6 text-center space-y-4">
-              <span className="font-mono text-[9px] sm:text-[10px] font-bold text-gold-400 uppercase tracking-widest bg-gold-500/10 px-3 py-1 rounded-full border border-gold-500/20 inline-block">
-                Campaign Mandate & Vision
-              </span>
-              <p className="font-sans text-xs sm:text-sm md:text-base text-royal-100 leading-relaxed font-normal text-center">
-                War mostly caused in Africa is a major challenge facing the continent today. It is in view of this that <strong className="text-gold-200 font-semibold">Peace Tower of Africa</strong> has created a platform to promote peace among countries and serve as a vehicle or conduit leading to the enhancement of socio-economic development, national integration and economic business in Ghana, Africa and around the globe.
-              </p>
-              
-              {/* Read More trigger */}
-              <div className="pt-2">
-                <button
-                  onClick={() => setIsCharterOpen(true)}
-                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-gold-400 hover:text-gold-200 bg-gold-500/10 hover:bg-gold-500/20 px-4 py-2.5 rounded border border-gold-500/30 hover:border-gold-500/50 cursor-pointer shadow-md transition-all scale-100 hover:scale-105 active:scale-[0.98]"
-                >
-                  <BookOpen className="w-4 h-4 text-gold-400 animate-pulse" />
-                  Read More
-                  <ChevronRight className="w-3.5 h-3.5 text-gold-400" />
-                </button>
+            {/* Middle Image */}
+            <div className="flex flex-col items-center group">
+              <div className="relative w-44 h-56 rounded-md overflow-hidden border border-gold-500/35 p-1 bg-royal-950 shadow-lg shadow-gold-500/5 group-hover:border-gold-500/60 transition-all scale-100 group-hover:scale-105 active:scale-[0.98]">
+                <img 
+                  src="https://www.myjoyonline.com/wp-content/uploads/2024/08/Osabarima_Kwesi_Atta.jpg" 
+                  alt="Osabarima Kwesi Atta II" 
+                  className="w-full h-full object-cover rounded"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-royal-950/60 via-transparent to-transparent opacity-80" />
+                <span className="absolute bottom-2 left-2 font-mono text-[8px] uppercase tracking-wider text-gold-300 bg-royal-950/90 px-1.5 py-0.5 rounded border border-gold-500/20">
+                  Osabarima Kwesi Atta II
+                </span>
               </div>
+              <span className="mt-3 font-mono text-[9px] sm:text-[10px] text-gold-400/80 text-center tracking-wider max-w-[180px] leading-normal uppercase font-bold">
+                Paramount Host & Patron
+              </span>
             </div>
 
             {/* Right Image */}
             <div 
-              className="md:col-span-3 flex flex-col items-center cursor-pointer group"
+              className="flex flex-col items-center cursor-pointer group"
               onClick={() => onExplore('ghana-thank-you-awards')}
             >
-              <div className="relative w-40 h-52 sm:w-44 sm:h-56 rounded-md overflow-hidden border border-gold-500/35 p-1 bg-royal-950 shadow-lg shadow-gold-500/5 group-hover:border-gold-500/60 transition-all scale-100 group-hover:scale-105 active:scale-[0.98]">
+              <div className="relative w-44 h-56 rounded-md overflow-hidden border border-gold-500/35 p-1 bg-royal-950 shadow-lg shadow-gold-500/5 group-hover:border-gold-500/60 transition-all scale-100 group-hover:scale-105 active:scale-[0.98]">
                 <img 
                   src="https://i.postimg.cc/h48tSXD8/IMG-20260616-WA0010.jpg" 
                   alt="Peace Tower Seal" 
@@ -260,6 +257,28 @@ export default function Hero({ onExplore }: HeroProps) {
               </span>
             </div>
 
+          </div>
+
+          {/* Majestic notes written nicely and professionally under the 3 pictures */}
+          <div className="mt-10 pt-8 border-t border-gold-500/20 text-center space-y-4 max-w-4xl mx-auto">
+            <span className="font-mono text-[9px] sm:text-[10px] font-bold text-gold-400 uppercase tracking-widest bg-gold-500/10 px-3 py-1 rounded-full border border-gold-500/20 inline-block">
+              Campaign Mandate & Vision
+            </span>
+            <p className="font-sans text-xs sm:text-sm md:text-base text-royal-100 leading-relaxed font-normal text-center">
+              War mostly caused in Africa is a major challenge facing the continent today. It is in view of this that <strong className="text-gold-200 font-semibold">Peace Tower of Africa</strong> has created a platform to promote peace among countries and serve as a vehicle or conduit leading to the enhancement of socio-economic development, national integration and economic business in Ghana, Africa and around the globe.
+            </p>
+            
+            {/* Read More trigger */}
+            <div className="pt-2">
+              <button
+                onClick={() => setIsCharterOpen(true)}
+                className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-gold-400 hover:text-gold-200 bg-gold-500/10 hover:bg-gold-500/20 px-4 py-2.5 rounded border border-gold-500/30 hover:border-gold-500/50 cursor-pointer shadow-md transition-all scale-100 hover:scale-105 active:scale-[0.98]"
+              >
+                <BookOpen className="w-4 h-4 text-gold-400 animate-pulse" />
+                Read More
+                <ChevronRight className="w-3.5 h-3.5 text-gold-400" />
+              </button>
+            </div>
           </div>
         </motion.div>
 

@@ -114,31 +114,6 @@ export const NOBLE_PATRONS: Patron[] = [
     ],
     imageIndex: 13,
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToysYm_q4KaWAyaoCZgkYJeSXTL9MbzYu-Jw&s"
-  },
-  {
-    id: "safo",
-    name: "Apostle Dr. Kwadwo Safo",
-    title: "Founder, Star of Africa & Renowned Philanthropist",
-    achievements: [
-      "Renowned industrialist and promoter of local technological self-reliance",
-      "Direct awardee and active sponsor of the African Living Legends Festival",
-      "Pioneer in youth technical guidance and continental enterprise",
-      "Advocate of combining traditional values with modern industrialization"
-    ],
-    imageIndex: 1,
-    imageUrl: "https://i0.wp.com/www.gbcghanaonline.com/wp-content/uploads/2025/09/thumbnail_1000608374.jpg"
-  },
-  {
-    id: "mensah",
-    name: "Nii Kojo Mensah I",
-    title: "Key Founding Coordinator & Custodian",
-    achievements: [
-      "Pioneered the corporate framework connecting Global Trade Network Int. (GTNI)",
-      "Arranged traditional council collaborations to secure land allocations",
-      "Coordinated with World Peace Volunteers and Great Corner Stone Foundation",
-      "Lead fundraiser director of the Ghana @ 60 peace campaigns"
-    ],
-    imageIndex: 14
   }
 ];
 
