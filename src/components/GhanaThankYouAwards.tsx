@@ -497,6 +497,55 @@ Sovereign Coordinators:
           <p className="font-serif italic text-gold-300 font-semibold tracking-wide text-xs sm:text-sm md:text-base">
             Originally observed on World Thank You Day (11th January) • Organizers: Hemans Events & Media Consult
           </p>
+
+          {/* THREE WELL-ARRANGED HEADER IMAGES ROW */}
+          <div className="grid grid-cols-3 gap-3 sm:gap-6 max-w-3xl mx-auto py-6">
+            {/* Left Image */}
+            <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-lg overflow-hidden border border-gold-500/35 p-1 bg-royal-950 shadow-lg shadow-gold-500/5 hover:border-gold-500/60 transition-all hover:scale-[1.03] duration-300 group/headerimg cursor-pointer">
+              <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO29QE0OT-4qApGdoTKyO7N5OYJdYM1CmvCQnSO6GrXDZW-kPtnxJH6hiV9shCMYCIvIs-igpcmN1KbtTbnFMEBhQDSnfDDpR__QKcTQo&s=10" 
+                alt="GTYA Left Emblem" 
+                className="w-full h-full object-cover rounded transition-transform duration-500 group-hover/headerimg:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-royal-950/90 via-royal-950/20 to-transparent p-1.5 text-center">
+                <span className="font-mono text-[7px] sm:text-[9px] text-gold-300 font-bold uppercase tracking-widest block truncate">
+                  Sovereign Campaign
+                </span>
+              </div>
+            </div>
+
+            {/* Middle Image */}
+            <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-lg overflow-hidden border border-gold-500/35 p-1 bg-royal-950 shadow-lg shadow-gold-500/5 hover:border-gold-500/60 transition-all hover:scale-[1.03] duration-300 group/headerimg cursor-pointer">
+              <img 
+                src="https://i.postimg.cc/h48tSXD8/IMG-20260616-WA0010.jpg" 
+                alt="Peace Tower Seal" 
+                className="w-full h-full object-cover rounded transition-transform duration-500 group-hover/headerimg:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-royal-950/90 via-royal-950/20 to-transparent p-1.5 text-center">
+                <span className="font-mono text-[7px] sm:text-[9px] text-gold-300 font-bold uppercase tracking-widest block truncate">
+                  Peace Tower Seal
+                </span>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-lg overflow-hidden border border-gold-500/35 p-1 bg-royal-950 shadow-lg shadow-gold-500/5 hover:border-gold-500/60 transition-all hover:scale-[1.03] duration-300 group/headerimg cursor-pointer">
+              <img 
+                src="https://i.ibb.co/7NTcqXZW/Whats-App-Image-2026-06-29-at-01-54-43.jpg" 
+                alt="GTYA Right Emblem" 
+                className="w-full h-full object-cover rounded transition-transform duration-500 group-hover/headerimg:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-royal-950/90 via-royal-950/20 to-transparent p-1.5 text-center">
+                <span className="font-mono text-[7px] sm:text-[9px] text-gold-300 font-bold uppercase tracking-widest block truncate">
+                  National Honors
+                </span>
+              </div>
+            </div>
+          </div>
+
           <div className="h-[2px] w-36 bg-gradient-to-r from-rose-600 via-amber-500 to-emerald-600 mx-auto rounded-full mt-4" />
           
           <p className="font-sans text-sm sm:text-base text-royal-100/80 leading-relaxed max-w-3xl mx-auto font-light pt-2">
