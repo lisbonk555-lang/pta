@@ -385,7 +385,7 @@ export default function GhanaThankYouAwards() {
           ${nomineesHTML}
 
           <div class="footer">
-            <p><strong>To Participate / Partner / Sponsor:</strong> 0244 105 913 / 024 123 0069 / 0547 464 212</p>
+            <p><strong>To Participate / Partner / Sponsor:</strong> 024 123 0069 / 0547 464 212 / 0573 744 909</p>
             <p>Email: tawiapeaceicon@gmail.com • Office Location: St Johns - Accra, Ghana</p>
             <p style="font-size: 10px; opacity: 0.6; margin-top: 10px;">© 2026 Peace Tower of Africa Foundation. All rights reserved.</p>
           </div>
@@ -417,8 +417,8 @@ ORGANIZERS:
 - Supported by the Ga Traditional Council
 
 CONTACT PHONE LINERS:
-- Tel: 0573 744 909 / 0244 105 913
-- Participation Hotline: 0244 105 913 / 024 123 0069 / 0547 464 212
+- Tel: 024 123 0069 / 0547 464 212 / 0573 744 909
+- Participation Hotline: 024 123 0069 / 0547 464 212 / 0573 744 909
 - Email: tawiapeaceicon@gmail.com
 - Office Location: St Johns - Accra, Ghana
 
@@ -629,7 +629,7 @@ Sovereign Coordinators:
                           </div>
                           <div>
                             <span className="text-[9px] font-mono text-royal-100/50 uppercase block">Inquiries Line</span>
-                            <p className="text-gold-200 font-mono font-bold">0573 744 909 / 0244 105 913</p>
+                            <p className="text-gold-200 font-mono font-bold">024 123 0069 / 0547 464 212 / 0573 744 909</p>
                           </div>
                         </div>
 
@@ -655,7 +655,7 @@ Sovereign Coordinators:
 
                         <div className="p-4 rounded-lg bg-royal-950/60 border border-rose-500/20 text-[11px] text-royal-100/90 leading-relaxed font-light mt-4">
                           <strong className="text-rose-400 block font-mono text-[9px] uppercase tracking-wider mb-1 font-bold">Participation Hotline</strong>
-                          Call to register or support: <strong className="text-gold-400 font-mono">0244 105 913</strong>, <strong className="text-gold-400 font-mono">024 123 0069</strong> or <strong className="text-gold-400 font-mono">0547 464 212</strong>.
+                          Call to register or support: <strong className="text-gold-400 font-mono">024 123 0069</strong>, <strong className="text-gold-400 font-mono">0547 464 212</strong> or <strong className="text-gold-400 font-mono">0573 744 909</strong>.
                         </div>
                       </div>
 
@@ -1148,7 +1148,7 @@ Sovereign Coordinators:
                       </div>
                       <h4 className="font-serif text-base font-bold text-gold-100">GTYA Text Manifesto & Contact Lines</h4>
                       <p className="font-sans text-xs text-royal-100/70 mt-1 leading-relaxed">
-                        Extracted plain-text charter comprising details of organizers, previous editions, and exact telephone lines (0573 744 909 / 0244 105 913) for quick reference.
+                        Extracted plain-text charter comprising details of organizers, previous editions, and exact telephone lines (024 123 0069 / 0547 464 212 / 0573 744 909) for quick reference.
                       </p>
                     </div>
                     <button 

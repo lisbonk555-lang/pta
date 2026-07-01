@@ -289,12 +289,14 @@ export const GALLERY_IMAGES: GalleryImage[] = [
 ];
 
 export const CONTACT_NUMBERS = [
+  "+233 (0) 24 123 0069",
   "+233 (0) 547 464 212",
-  "+233 (0) 577 999 645"
+  "+233 (0) 573 744 909"
 ];
 
 export const RSVP_NUMBERS = [
-  "0200 411830",
+  "024 123 0069",
+  "0547 464 212",
   "0573 744 909"
 ];
 

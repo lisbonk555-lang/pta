@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Phone, Mail, MapPin, Send, Check, ShieldCheck, Heart, Users } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, Check, ShieldCheck, Heart, Users, HeartHandshake } from 'lucide-react';
 import { CONTACT_NUMBERS, RSVP_NUMBERS, CONTACT_EMAIL, VENUE_INFO, HASHTAG, TWITTER_HANDLE } from '../data';
 
 export default function ContactSection() {
@@ -11,6 +11,7 @@ export default function ContactSection() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [newsletterSubmitted, setNewsletterSubmitted] = useState(false);
+  const [selectedJackets, setSelectedJackets] = useState(1);
 
   const handleSubmitPledge = (e: React.FormEvent) => {
     e.preventDefault();
@@ -147,8 +148,139 @@ export default function ContactSection() {
           </div>
 
           {/* Contact Support Form Column (7 columns out of 12) */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 space-y-8">
             
+            {/* COMMUNITY RESCUE, COUNSELING & DISASTER MANAGEMENT CAMPAIGN */}
+            <div className="royal-glass p-6 sm:p-8 rounded-lg border border-gold-500/25 bg-gradient-to-b from-royal-900/40 to-royal-950 text-left relative overflow-hidden">
+              {/* TWO IMAGES ON TOP OF THE NOTE */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-gold-500/20 bg-royal-950/80 group">
+                  <img 
+                    src="https://i.ibb.co/nTVGgWN/Whats-App-Image-2026-06-29-at-01-54-43.jpg" 
+                    alt="Community Rescue Action" 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-royal-950/70 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2.5 font-mono text-[9px] font-bold text-gold-300 uppercase tracking-widest bg-royal-950/80 px-2 py-0.5 rounded border border-gold-500/15">
+                    Rescue Coordination
+                  </span>
+                </div>
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-gold-500/20 bg-royal-950/80 group">
+                  <img 
+                    src="https://i.ibb.co/ymSfttXJ/Whats-App-Image-2026-06-30-at-20-29-37.jpg" 
+                    alt="Disaster Impact & Support" 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-royal-950/70 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2.5 font-mono text-[9px] font-bold text-gold-300 uppercase tracking-widest bg-royal-950/80 px-2 py-0.5 rounded border border-gold-500/15">
+                    Disaster Relief Response
+                  </span>
+                </div>
+              </div>
+
+              {/* Note Heading */}
+              <div className="space-y-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-1.5 h-6 bg-gold-500 rounded-full" />
+                  <h3 className="font-serif text-lg sm:text-xl font-extrabold text-gold-100 uppercase tracking-wide">
+                    Community Rescue, Counseling & Disaster Support
+                  </h3>
+                </div>
+
+                <div className="space-y-4 text-xs sm:text-sm text-royal-100/90 leading-relaxed font-light">
+                  <p className="font-serif italic text-gold-200/90 border-l-2 border-gold-500/30 pl-3 py-1 bg-royal-950/40 rounded-r">
+                    "It is not easy to experience flood and see death coming and someone rescued you. It will always scare the persons whenever he/she sees another storm coming. People are traumatized, how do we help them, unless we add counseling to help them."
+                  </p>
+                  
+                  <p>
+                    <strong className="text-gold-300 font-medium">Peace Tower of Africa</strong> will establish a rescue team within every community to save lives and give first hand support and Counseling. People struggle for many years to acquire belongings, then one day rain will take all away including money in the house and food. Disaster Management must be added in the community too to save lives and property when accidents acquire.
+                  </p>
+
+                  <div className="p-4 rounded-lg bg-royal-950/90 border border-amber-500/20 space-y-3">
+                    <div className="flex items-center gap-2 text-gold-400 font-serif font-bold text-sm">
+                      <HeartHandshake className="w-4 h-4 text-rose-400 shrink-0" />
+                      <span>URGENT REQUEST FOR SUPPORT</span>
+                    </div>
+                    <p className="text-xs text-royal-100/80 leading-relaxed">
+                      Due to these, we request your support in Cash and Kind. We want to get more life Jackets to save lives, <strong className="text-gold-300 font-semibold">¢600.00 ($60.00 USD)</strong> for one. How many can you buy for us to distribute?
+                    </p>
+
+                    {/* DYNAMIC CALCULATOR */}
+                    <div className="pt-2 border-t border-gold-500/10 space-y-3">
+                      <span className="text-[10px] font-mono text-gold-500 uppercase tracking-wider block">Select Life Jacket Donation Tier</span>
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                        {[
+                          { qty: 1, label: "1 Jacket", ghc: 600, usd: 60 },
+                          { qty: 3, label: "3 Jackets", ghc: 1800, usd: 180 },
+                          { qty: 5, label: "5 Jackets", ghc: 3000, usd: 300 },
+                          { qty: 10, label: "10 Jackets", ghc: 6000, usd: 600 },
+                        ].map((tier) => (
+                          <button
+                            key={tier.qty}
+                            type="button"
+                            onClick={() => setSelectedJackets(tier.qty)}
+                            className={`p-2 rounded border font-mono text-xs flex flex-col items-center justify-center transition-all cursor-pointer ${
+                              selectedJackets === tier.qty
+                                ? "bg-gold-500/10 border-gold-500 text-gold-300 shadow"
+                                : "bg-royal-950 border-gold-500/10 text-royal-100/60 hover:border-gold-500/20"
+                            }`}
+                          >
+                            <span className="font-bold">{tier.label}</span>
+                            <span className="text-[9px] opacity-80">¢{tier.ghc} (${tier.usd})</span>
+                          </button>
+                        ))}
+                      </div>
+
+                      {/* Display current calculation */}
+                      <div className="bg-royal-950/60 p-3 rounded border border-gold-500/10 flex items-center justify-between">
+                        <div>
+                          <span className="text-[9px] font-mono text-royal-100/40 uppercase block">Total Pledged Donation</span>
+                          <span className="font-serif text-xs sm:text-sm font-bold text-gold-300">
+                            {selectedJackets} Life {selectedJackets === 1 ? 'Jacket' : 'Jackets'}
+                          </span>
+                        </div>
+                        <div className="text-right">
+                          <span className="text-xs sm:text-sm font-mono font-bold text-royal-50 block">¢{(selectedJackets * 600).toLocaleString()}.00</span>
+                          <span className="text-[10px] font-mono text-royal-100/50 block">${(selectedJackets * 60).toLocaleString()}.00 USD</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Momo channel details */}
+                    <div className="bg-royal-900 border border-gold-500/30 p-3 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md">
+                      <div className="flex items-center gap-2.5">
+                        <div className="p-1.5 rounded bg-amber-500/10 border border-gold-500/20 text-gold-400 shrink-0 font-bold text-xs font-mono">
+                          MTN
+                        </div>
+                        <div className="text-left">
+                          <span className="text-[8px] font-mono text-royal-100/40 uppercase block leading-none">Official Mobile Money Channel</span>
+                          <span className="font-mono text-xs sm:text-sm font-extrabold text-gold-300 select-all block mt-0.5">
+                            MOMO Number: +233 24 123 0069
+                          </span>
+                        </div>
+                      </div>
+                      <a 
+                        href="tel:+233241230069"
+                        className="w-full sm:w-auto text-center px-4 py-1.5 rounded bg-gradient-to-r from-amber-600 to-gold-500 text-royal-950 font-serif font-black text-[10px] tracking-wider uppercase hover:from-gold-500 hover:to-gold-300 transition-all shadow shrink-0"
+                      >
+                        Buy one & save victims
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              {/* Corner decorations */}
+              <div className="absolute top-2 left-2 w-3.5 h-3.5 border-t border-l border-gold-500/20 rounded-tl"></div>
+              <div className="absolute top-2 right-2 w-3.5 h-3.5 border-t border-r border-gold-500/20 rounded-tr"></div>
+              <div className="absolute bottom-2 left-2 w-3.5 h-3.5 border-b border-l border-gold-500/20 rounded-bl"></div>
+              <div className="absolute bottom-2 right-2 w-3.5 h-3.5 border-b border-r border-gold-500/20 rounded-br"></div>
+            </div>
+
+            {/* PLEDGE FORM */}
             <div className="royal-glass p-6 sm:p-8 rounded-lg border border-gold-500/25 bg-gradient-to-b from-royal-900/40 to-royal-950 text-left relative">
               
               <AnimatePresence mode="wait">
