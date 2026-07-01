@@ -295,8 +295,7 @@ export const CONTACT_NUMBERS = [
 
 export const RSVP_NUMBERS = [
   "0200 411830",
-  "0573 744 909",
-  "0541 724 913"
+  "0573 744 909"
 ];
 
 export const CONTACT_EMAIL = "peacetowerofafrica1@gmail.com";

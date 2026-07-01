@@ -533,7 +533,7 @@ Sovereign Coordinators:
             {/* Right Image */}
             <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-lg overflow-hidden border border-gold-500/35 p-1 bg-royal-950 shadow-lg shadow-gold-500/10 hover:shadow-gold-500/30 hover:border-gold-400 transition-all hover:scale-[1.03] duration-300 group/headerimg cursor-pointer">
               <img 
-                src="https://i.ibb.co/7NTcqXZW/Whats-App-Image-2026-06-29-at-01-54-43.jpg" 
+                src="https://i.ibb.co/nTVGgWN/Whats-App-Image-2026-06-29-at-01-54-43.jpg" 
                 alt="GTYA Right Emblem" 
                 className="w-full h-full object-cover object-top rounded transition-transform duration-500 group-hover/headerimg:scale-105"
                 referrerPolicy="no-referrer"
